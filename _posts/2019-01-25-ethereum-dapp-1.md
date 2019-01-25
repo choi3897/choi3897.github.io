@@ -22,18 +22,12 @@ lastmod: 2019-01-25 20:00:00 -0900
 6. Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #6. Cast Votes - Step 3
 7. Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #7. Watch Events - Step 4(개발 완료)
 
-<span style="color:#6495ED">
-
 # 블록체인(BlockChain)이란
-</span>
 
 ---
 
-<span style="color:#4169E1">
-
 ## 일반적인 Web Application
 
-</span>
 일반적으로 우리가 Web Application과 상호작용할 때는 웹브라우저를 이용하여 네트워크를 통해 중앙서버에 연결하게 된다.
 
 ![일반적인 Web Application](http://www.dappuniversity.com/web_application_diagram.png)
@@ -44,20 +38,15 @@ lastmod: 2019-01-25 20:00:00 -0900
 
 하지만 예를 들어, 중앙서버로 웹에 투표 어플리케이션을 만들었을 경우, 아래와 같이 우리가 마주할 수 있는 문제점들이 있다:
 
-<span style="color:#4169E1">
-
 * 데이터베이스상의 데이터는 조작이 가능하다.
 * 웹서버 상의 소스코드는 언제든지 수정될 수 있다.
-  
-</span>
 
 이는 곧 신뢰받지 못하는 투표 어플리케이션인 셈이며, 그 누구도 이 어플리케이션을 사용하지 않을 것이다.
 
 ---
-<span style="color:#4169E1">
 
 ## 블록체인을 활용한 투표 Application
-</span>
+
 이러한 이유로 우리는 일반적인 웹에서 돌아가는 중앙집권적인 투표 어플리케이션을 만들고 싶지 않다.
 
 우리는 대신 투표 앱을 블록체인 상에 배포하여 네트워크에 연결된 누구나 투표에 참여할 수 있게 만들고자 한다.
