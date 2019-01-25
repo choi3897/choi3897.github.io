@@ -1,7 +1,7 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
   <div class="sidebar sticky">
   {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
-  {% if page.sidebar %}
+  <!-- {% if page.sidebar %}
     {% for s in page.sidebar %}
       {% if s.image %}
         <img src=
@@ -19,6 +19,20 @@
     {% if page.sidebar.nav %}
       {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
-  {% endif %}
+  {% endif %} -->
+
+  {% include nav_list nav=site.sidebar.nav %}
+    <!-- <nav class="content-ul">
+      <div>Category</div>
+      {% for category in site.categories %}
+      <a href="{{ site.url }}/{{ site.category_dir }}/categories/#{{ category | first }}"
+        class="sidebar-nav-item pl-3rem">
+                            <span class="name">
+                                {{ category | first }}
+                            </span>
+        <span class="badge">{{ category | last | size }}</span>
+      </a>
+      {% endfor %}
+    </nav> -->
   </div>
 {% endif %}
