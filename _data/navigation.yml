@@ -10,3 +10,14 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+posts:
+  - title: "Blockchain"
+    children:
+      - title: "Ethereum"
+        url: /categories/#ethereum
+      - title: "Hyperledger Fabric"
+        url: /categories/hyperledger-fabric/
+  - title: "Protocol"
+    url: "/categories/protocol/"
+
