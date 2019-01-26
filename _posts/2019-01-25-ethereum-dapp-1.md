@@ -1,5 +1,5 @@
 ---
-title: "Ethereum(이더리움) 투표 Dapp - #1.Blockchain이란 Tutorial(번역 및 개발)"
+title: "Ethereum(이더리움) 투표 Dapp Tutorial(번역 및 개발)- #1.Blockchain이란"
 date: 2019-01-25 20:00:00 -0900
 categories: ethereum
 tags: 
@@ -7,15 +7,15 @@ tags:
   - Ethereum
   - Dapp
   - Solidity
-lastmod: 2019-01-25 20:00:00 -0900
+lastmod: 2019-01-26 19:00:00 -0900
 ---
 
 **본 포스팅은 [dappuniversity : the-ultimate-ethereum-dapp-tutorial](http://www.dappuniversity.com/articles/the-ultimate-ethereum-dapp-tutorial)을 토대로 작성되었습니다.**
 
 # 목록
 
-1. Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #1.Blockchain이란
-2. Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #2.Smart Contract란
+1. **Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #1.Blockchain이란**
+2. [Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #2.Smart Contract란](https://choi3897.github.io/ethereum/ethereum-dapp-2/#)
 3. Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #3.개발환경 설정
 4. Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #4.Smoke Test - Step 1(개발 시작)
 5. Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #5.List Candidates - Step 2
@@ -53,7 +53,6 @@ lastmod: 2019-01-25 20:00:00 -0900
 
 ![BlockChain Network](http://www.dappuniversity.com/ethereum_blockchain_nodes_diagram.png)
 
-
 블록체인은 네트워크와 데이터베이스가 함께 있는 네트워크 종류라고 할 수 있다. 블록체인은 <span style="color:#4169E1">**노드**</span>라고 불리는 컴퓨터들의 P2P(peer-to-peer) 네트워크이며, 모든 데이터와 코드를 블록체인 네트워크 상에서 공유한다.
 
 따라서 당신의 디바이스가 블록체인에 연결되어 있다면, 당신은 블록체인 네트워크 상의 <span style="color:#4169E1">**노드**</span>인 셈이다. 당신은 네트워크 상의 모든 컴퓨터 노드들에게 데이터를 전달할 수 있게 된다. 또한, 당신은 이때부터 블록체인 상의 모든 데이터와 코드들의 사본을 갖게 된다.
@@ -66,10 +65,7 @@ lastmod: 2019-01-25 20:00:00 -0900
 
 이는 우리가 만들고자 하는 투표 앱에서 상당히 중요한 역할을 한다. 투표자가 투표한 결과가 조작되어서는 안되기 때문이다.
 
-<span style="color:#4169E1">
-
 ## 일반 유저(투표자) 관점에서의 블록체인 투표 dapp
-</span>
 
 일반 유저(투표자)들이 우리가 만들고자 하는 앱에서 투표를 하기 위해서는 이더리움의 암호화폐 이더(Ether)가 들어있는 지갑 주소(Wallet address)가 있는 계정(account)가 필요하다.
 
