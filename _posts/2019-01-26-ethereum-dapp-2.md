@@ -50,7 +50,7 @@ lastmod: 2019-01-26 19:00:00 -0900
 
 * 우리는 HTML, CSS와 JavaScript로 구성된 전통적인 Front-end Client를 작성할 것이다. 이 Client는 우리가 설치할 Local Ehtereum Blockchain에 연결될 것이다.
 * 우리의 투표 dApp과 관련된 모든 비즈니스 로직들은 Solidity로 작성된 Election이라고 하는 스마트 계약에 작성할 것이다.
-* 이 스마트 계약은 우리가 설치한 Local Ehtereum Blockchain에 배포하여 Accounts들이 투표할 수 있도록 할 것읻.
+* 이 스마트 계약은 우리가 설치한 Local Ehtereum Blockchain에 배포하여 Accounts들이 투표할 수 있도록 할 것이다.
 
 ![투표 dApp 화면 예시](http://www.dappuniversity.com/dapp_demo.gif)
 
