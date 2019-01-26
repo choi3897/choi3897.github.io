@@ -83,11 +83,11 @@ truffle로 개발하기 때문에 solc와 같은 Solidity Compiler를 별도 설
 
 ### IDE
 
-이는 사용자마다 다르겠지만 나는 <span style="color:#4169E1">**Visual Studio Code**</span>(vscode)을 사용했다.
+IDE는 사용자마다 다르겠지만 필자는 <span style="color:#4169E1">**Visual Studio Code**</span>(vscode)을 사용했다.
 
 solidity, truffle 등 다양한 Extension으로 스마트 계약 개발을 편리하게 도와준다.
 
-## 필자 개발환경 Version Info
+## 개발환경 Version Info
 
 ```sh
 $ node -v
