@@ -16,7 +16,7 @@ lastmod: 2019-01-27 23:00:00 -0900
 
 1. [Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #1.Blockchain이란](https://choi3897.github.io/ethereum/ethereum-dapp-1/#)
 2. [Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #2.Smart Contract란](https://choi3897.github.io/ethereum/ethereum-dapp-2/#)
-3. [Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #3.개발환경 설정](https://choi3897.github.io/ethereum/ethereum-dapp-3/#))
+3. [Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #3.개발환경 설정](https://choi3897.github.io/ethereum/ethereum-dapp-3/#)
 4. **Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #4.Smoke Test - Step 1(개발 시작)**
 5. Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #5.List Candidates - Step 2
 6. Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #6. Cast Votes - Step 3
@@ -25,7 +25,7 @@ lastmod: 2019-01-27 23:00:00 -0900
 # Smoke Test까지 개발하기
 
 ---
-**Smoke Test**: 구축된 테스트 환경에서 테스트가 가능한지 여부를 판단하기 위해 주요 모둘이나 시스템을 간단하게 테스트하는 것
+**Smoke Test**: 구축된 테스트 환경에서 테스트가 가능한지 여부를 판단하기 위해 주요 모듈이나 시스템을 간단하게 테스트하는 것
 
 ## Ganache 구동하기
 
@@ -35,14 +35,15 @@ Ganache는 CLI에서 설치하고 구동도 가능하지만 본 포스팅은 조
 
 이제 우리 프로젝트의 디렉토리를 먼저 생성해보자
 
-```sh
-$ mkdir election
-$ cd election
+```shell
+>mkdir election
+>cd election
 ```
+
 election 디렉토리로 이동 후, 우리는 빠르게 dApp 구조를 생성하기 위해 [Truffle Box](https://truffleframework.com/boxes)라는 dApp 프로젝트 샘플 모음을 활용할 것이다. 우리는 이 Truffle Box에서 [Pet Shop Box](https://truffleframework.com/boxes/pet-shop)를 활용할 것이다.
 
-```sh
-truffle unbox pet-shop
+```shell
+>truffle unbox pet-shop
 ```
 
 pet shop box으로 생성된 폴더 구조는 아래 그림과 같다.
@@ -69,15 +70,15 @@ pet shop box으로 생성된 폴더 구조는 아래 그림과 같다.
 
 프로젝트의 root 경로에서 contracts 폴더에 우리의 스마트 계약을 생성해보자.
 
-```sh
-$ touch contracts/Election.sol
+```shell
+>touch contracts/Election.sol
 ```
 
 이제 우리 프로젝트가 제대로 작동하는지 검증할 "Smoke Test"를 작성해보자.
 
 먼저 Election.sol 파일을 열어 아래 code를 작성한다.
 
-```
+```js
 pragma solidity 0.5.0;
 
 contract Election {
@@ -91,6 +92,7 @@ contract Election {
     }
 }
 ```
+
 위 코드를 해석해보자.
 
 1. 먼저 스마트 계약은 solidity version을 선언하는 pragma solidity 구문으로 시작해야 한다.
@@ -102,8 +104,8 @@ contract Election {
 
 이를 위해 우리는 migrations 디렉토리에 새로운 파일을 만들어야 한다.
 
-```sh
-$ touch migrations/2_deploy_contracts.js
+```shell
+>touch migrations/2_deploy_contracts.js
 ```
 
 migrations 디렉토리에 생성하는 파일들은 모두 숫자로 넘버링해야 Truffle이 순서를 인식하고 실행해주니 꼭 붙여주자.
@@ -125,29 +127,31 @@ module.exports = function(deployer) {
 
 이제 migration을 해보자.(Ganache를 미리 실행시켜놓자)
 
-```sh
-$ truffle migrate
+```shell
+>cd ~/election
+>truffle migrate
 ```
 
 이제 우리가 작성한 스마트 계약은 로컬 이더리움 블록체인 환경에 성공적으로 migration되었다. 이를 테스트해보기 위해 Console을 열어서 확인해보자.
 
-```sh
-$ truffle console
+```shell
+>truffle console
 ```
 
 콘솔에 접속한 후, 우리가 배포한 스마트계약의 instance를 가져와 우리가 계약에 설정한 candidate 이름을 읽어올 수 있는지 확인해보자.
+Truffle 콘솔에서 아래 코드를 입력해보자.
 
-```js
-Election.deployed().then(function(instance) { app = instance })
+```shell
+>Election.deployed().then(function(instance) { app = instance })
 ```
 
 위 코드에서 Election은 우리가 작성한 migration 파일의 변수명이다. deployed() 함수로 배포된 계약의 instance를 가져오고 이를 app이라는 변수에 할당해준다.
 
 이제 우리는 candidate 변수를 아래와 같이 가져올 수 있게 된다.
 
-```js
-app.candidate()
-// => 'Candidate 1'
+```shell
+>app.candidate()
+'Candidate 1'
 ```
 
 여기까지 우리는 첫번째 스마트 계약을 작성, 블록체인에 배포, 데이터의 검색까지 해보았다.

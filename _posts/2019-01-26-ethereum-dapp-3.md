@@ -32,14 +32,14 @@ lastmod: 2019-01-26 23:00:00 -0900
 
 자신의 개발환경에 node가 깔려있는지 확인하고자 한다면 아래와 같이 입력하면 된다.
 
-```sh
-$ node -v
+```shell
+>node -v
 ```
 
 node가 깔려있지 않다면 아래 명령어로 설치하면 된다.
 
-```sh
-$ brew(apt-get) install nodejs
+```shell
+>brew(apt-get) install nodejs
 ```
 
 ### Truffle Framework
@@ -50,12 +50,12 @@ Truffle Framework는 Solidity로 스마크 계약을 작성할 수 있는 툴들
 
 또한, Truffle은 우리가 작성한 스마트 계약의 테스트와 블록체인으로의 배포를 도와준다. 
 
-뿐만 아니라, 폴더 구조를 미리 만들어 client-side application 소스코드의 공간도 미리 만들어준다.
+뿐만 아니라, 폴더 구조를 미리 만들어 client-side application 소스코드의 대략적인 아키텍처도 미리 잡아준다.
 
 아래 명령어로 truffle을 설치한다.
 
-```sh
-$ npm install -g truffle
+```shell
+>npm install -g truffle
 ```
 
 ### Ganache
@@ -79,25 +79,25 @@ Metamask는 우리의 투표 dApp 개발에 아래와 같은 도움을 준다.
 
 truffle로 개발하기 때문에 solc와 같은 Solidity Compiler를 별도 설치하지 않아도 된다.
 
-스마트 계약 작성 시에 Solidity 버전을 명시하게 되는데, 원작자는 solidity^0.4.23 버전을 사용했지만 일부 truffle 호환성 때문에 필자는 <span style="color:#4169E1">**solidity^0.5.0**</span>으로 개발했다.
+스마트 계약 작성 시에 Solidity 버전을 명시하게 되는데, 원작자는 solidity^0.4.23 버전을 사용했지만 일부 truffle 호환성 때문에 본인은 <span style="color:#4169E1">**solidity^0.5.0**</span>으로 개발했다.
 
 ### IDE
 
-IDE는 사용자마다 다르겠지만 필자는 <span style="color:#4169E1">**Visual Studio Code**</span>(vscode)을 사용했다.
+IDE는 사용자마다 다르겠지만 본인은 <span style="color:#4169E1">**Visual Studio Code**</span>(vscode)을 사용했다.
 
 solidity, truffle 등 다양한 Extension으로 스마트 계약 개발을 편리하게 도와준다.
 
 ## 개발환경 Version Info
 
-```sh
-$ node -v
+```shell
+>node -v
 v11.6.0
 
-$ truffle --version
+>truffle --version
 Truffle v5.0.2 - a development framework for Ethereum
 ```
 
-solidity version : 0.5.0
+#### solidity version : 0.5.0
 
 ### 참고
 
