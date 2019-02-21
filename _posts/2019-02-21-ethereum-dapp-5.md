@@ -413,7 +413,7 @@ $(function() {
 
 자동으로 브라우저가 띄워지며 아래 그림과 같은 화면만 나올 것이다.
 
-[브라우저 화면](http://www.dappuniversity.com/election_loading.png)
+![브라우저 화면](http://www.dappuniversity.com/election_loading.png)
 
 그림처럼 "Loading..." 메시지만 뜰 것이다. 이는 우리가 아직 블록체인에 로그인되어 있지 않기 때문이다. 블록체인에 연결하기 위해서는 Ganache에 있는 계정을 Metamask에 임포트해줘야한다.
 
