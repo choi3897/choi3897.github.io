@@ -17,7 +17,7 @@ lastmod: 2019-02-21 23:00:00 -0900
 1. [Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #1.Blockchain이란](https://choi3897.github.io/ethereum/ethereum-dapp-1/#)
 2. [Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #2.Smart Contract란](https://choi3897.github.io/ethereum/ethereum-dapp-2/#)
 3. [Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #3.개발환경 설정](https://choi3897.github.io/ethereum/ethereum-dapp-3/#)
-4. [Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #4.Smoke Test - Step 1(개발 시작)](https://choi3897.github.io/ethereum/ethereum-dapp-3/#)
+4. [Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #4.Smoke Test - Step 1(개발 시작)](https://choi3897.github.io/ethereum/ethereum-dapp-4/#)
 5. **Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #5.List Candidates - Step 2**
 6. Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #6. Cast Votes - Step 3
 7. Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #7. Watch Events - Step 4(개발 완료)
@@ -38,7 +38,7 @@ lastmod: 2019-02-21 23:00:00 -0900
 
 이를 위해 우리가 일전에 Election.sol 파일에 작성한 Election 계약에서 아래와 같이 후보자를 모델링할 수 있다.
 
-```js
+```javascript
 contract Election {
     // Model a Candidate
     struct Candidate {
@@ -57,7 +57,7 @@ contract Election {
 
 우리는 [Solidity mapping](https://solidity.readthedocs.io/en/v0.4.21/types.html?highlight=mapping#mappings)이라는 것을 활용해보자. Solidity에서 mapping 데이터 타입은 array 혹은 hash의 집합체로 key-value 형태로 저장된다. 아래와 같이 후보자들을 저장하는 mapping을 선언해보자.
 
-```js
+```javascript
 contract Election {
     // Model a Candidate
     struct Candidate {
@@ -81,7 +81,7 @@ contract Election {
 
 또한, 아래와 같이 counter cache state variable을 선언하여 선거에 참여하는 후보자들의 수를 알 수 있다.
 
-```js
+```javascript
 contract Election {
     // Model a Candidate
     struct Candidate {
@@ -106,7 +106,7 @@ Solidity에서는 mapping의 사이즈를 알 수 없으며 iterator로 전체 �
 
 이제 아래와 같이 후보자들을 추가하는 함수를 생성해보자.
 
-```js
+```javascript
 contract Election {
     // ...
 
@@ -130,7 +130,7 @@ addCandidate 함수 내부에서는 후보자 수를 나타내는 candidatesCoun
 
 이제 아래와 같이 계약이 배포될 때 2명의 후보자를 함께 생성하도록 만들어보자.
 
-```sh
+```javascript
 contract Election {
     // ...
 
@@ -149,7 +149,7 @@ contract Election {
 
 지금까지 이상없이 잘 따라왔다면 contract code는 아래와 같이 되어있을 것이다.
 
-```js
+```javascript
 pragma solidity 0.5.0;
 
 contract Election {
@@ -179,7 +179,7 @@ contract Election {
 
 여기까지 완성됐다면 계약코드를 아래와 같이 migrate해보자
 
-```sh
+```shell
 >truffle migrate --reset
 ```
 
@@ -194,7 +194,7 @@ contract Election {
 
 JS파일 내부에 Truffle에서 번들로 제공하는 Mocha Testing framework와 the Chai assertion library를 활용하여 테스트 코드를 작성해보겠다. 우리가 Truffle Console에서 했던것처럼 client-side에서 조금전까지 작성한 스마트 계약을 호출할때를 시뮬레이션해보자. 테스트 코드는 아래와 같다.
 
-```js
+```javascript
 var Election = artifacts.require("./Election.sol");
 
 contract("Election", function(accounts) {
@@ -309,7 +309,7 @@ Using network 'development'.
 
 다음은 "app.js" 파일을 아래 코드로 변경해주자.
 
-```js
+```javascript
 App = {
   web3Provider: null,
   contracts: {},

@@ -78,7 +78,7 @@ pet shop box으로 생성된 폴더 구조는 아래 그림과 같다.
 
 먼저 Election.sol 파일을 열어 아래 code를 작성한다.
 
-```js
+```javascript
 pragma solidity 0.5.0;
 
 contract Election {
@@ -112,7 +112,7 @@ migrations 디렉토리에 생성하는 파일들은 모두 숫자로 넘버링�
 
 이제 아래와 같이 우리가 작성한 계약을 배포할 migration을 생성해보자.
 
-```js
+```javascript
 var Election = artifacts.require("./Election.sol");
 
 module.exports = function(deployer) {
