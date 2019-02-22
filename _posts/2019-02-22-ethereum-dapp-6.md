@@ -41,7 +41,7 @@ contract Election {
 }
 ```
 
-추가로 "vote" 함수도 추가해보자.
+"vote" 함수도 추가해보자.
 
 ```javascript
 contract Election {
