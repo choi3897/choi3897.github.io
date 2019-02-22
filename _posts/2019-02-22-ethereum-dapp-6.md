@@ -337,7 +337,7 @@ castVote: function() {
 
 <img width="720" alt="2019-02-22 11 50 31" src="https://user-images.githubusercontent.com/14902468/53249946-afc39600-36fc-11e9-95ef-c6a6db12f536.png">
 
-이제 기호1번의 후보자에게 투표해보자. Vote 버튼을 누르는 순간 아래와 같은 팝업이 나타날 것이다. (팝업이 나타나지 않으면 Metamask에 가보면 볼 수 있다)
+이제 기호1번의 후보자에게 투표해보자. Vote 버튼을 누르는 순간 아래와 같은 팝업이 나타날 것이다. (팝업이 나타나지 않으면 Metamask를 클릭해서 볼 수 있다)
 
 <img width="361" alt="2019-02-22 11 53 04" src="https://user-images.githubusercontent.com/14902468/53250084-0b8e1f00-36fd-11e9-97b7-861a34fe52a9.png">
 
