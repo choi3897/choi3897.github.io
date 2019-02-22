@@ -1,5 +1,5 @@
 ---
-title: "Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #5.List Candidates - Step 2"
+title: "Ethereum(이더리움) 투표 Dapp 개발 Tutorial - #5.List Candidates"
 date: 2019-02-21 23:00:00 -0900
 categories: ethereum
 tags: 
@@ -14,13 +14,13 @@ lastmod: 2019-02-21 23:00:00 -0900
 
 # 목록
 
-1. [Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #1.Blockchain이란](https://choi3897.github.io/ethereum/ethereum-dapp-1/#)
-2. [Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #2.Smart Contract란](https://choi3897.github.io/ethereum/ethereum-dapp-2/#)
-3. [Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #3.개발환경 설정](https://choi3897.github.io/ethereum/ethereum-dapp-3/#)
-4. [Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #4.Smoke Test - Step 1(개발 시작)](https://choi3897.github.io/ethereum/ethereum-dapp-4/#)
-5. **Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #5.List Candidates - Step 2**
-6. Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #6. Cast Votes - Step 3
-7. Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #7. Watch Events - Step 4(개발 완료)
+1. [Ethereum(이더리움) 투표 Dapp 개발 Tutorial - #1.Blockchain이란](https://choi3897.github.io/ethereum/ethereum-dapp-1/#)
+2. [Ethereum(이더리움) 투표 Dapp 개발 Tutorial - #2.Smart Contract란](https://choi3897.github.io/ethereum/ethereum-dapp-2/#)
+3. [Ethereum(이더리움) 투표 Dapp 개발 Tutorial - #3.개발환경 설정](https://choi3897.github.io/ethereum/ethereum-dapp-3/#)
+4. [Ethereum(이더리움) 투표 Dapp 개발 Tutorial - #4.Smoke Test](https://choi3897.github.io/ethereum/ethereum-dapp-4/#)
+5. [**Ethereum(이더리움) 투표 Dapp 개발 Tutorial - #5.List Candidates**](https://choi3897.github.io/ethereum/ethereum-dapp-5/#)
+6. [Ethereum(이더리움) 투표 Dapp 개발 Tutorial - #6. Cast Votes](https://choi3897.github.io/ethereum/ethereum-dapp-6/#)
+7. [Ethereum(이더리움) 투표 Dapp 개발 Tutorial - #7. Watch Events](https://choi3897.github.io/ethereum/ethereum-dapp-7/#)
 
 # 후보자(Candidates) 리스트 불러오기
 
@@ -122,9 +122,10 @@ addCandidate 함수 내부에서는 후보자 수를 나타내는 candidatesCoun
 ### EVM의 3가지 저장 영역
 
 위에서 파라미터를 선언할때 **memory**라는 키워드를 선언했는데, EVM(Ethereum Virtual Machine)에서는 3가지 저장 영역이 존재한다.
-1) "storage" : contract state variable이 존재하는 영역. 모든 계약마다 각자의 storage가 있다. storage는 함수간에 공유되며 호출시에 다소 비싼 사용료(Gas)가 필요하다.
-2) "memory" : 임시 값을 저장하는 영역이다. (외부)함수 호출간에 사라지며 사용료가 다소 저렴하다.
-3) "stack" : 작은 local variable을 저장하는데 사용된다. 사용료가 대부분 무료이며, 제한된 양의 값들만 유지할 수 있다.
+
+1. "storage" : contract state variable이 존재하는 영역. 모든 계약마다 각자의 storage가 있다. storage는 함수간에 공유되며 호출시에 다소 비싼 사용료(Gas)가 필요하다.
+2. "memory" : 임시 값을 저장하는 영역이다. (외부)함수 호출간에 사라지며 사용료가 다소 저렴하다.
+3. "stack" : 작은 local variable을 저장하는데 사용된다. 사용료가 대부분 무료이며, 제한된 양의 값들만 유지할 수 있다.
 
 ### 2명의 후보자 생성
 
@@ -395,9 +396,10 @@ $(function() {
 ```
 
 위 코드를 짧게 해석해보자면:
-1) **web3 세팅**: web3.js는 클라이언트 앱에서 블록체인과 연결되기 위한 javascript 라이브러리다. 우리는 "initWeb3"라는 함수로 web3를 설정해줬다.
-2) **contracts 초기화**: "initContract"라는 함수 내부에서 배포된 스마트 계약 인스턴스를 가져온다. 그리고 contracts와 소통할 수 있도록 만들어줄 몇몇 변수를 할당한다.
-3) **Render 함수**: render 함수는 페이지에 스마트 계약에서 가져온 데이터들을 보여줄 수 있는 역할을 해준다. 여기서 우리는 스마트 계약에서 생성한 후보자들을 테이블에 렌더링 해주었다. 또한, 현재 블록체인에 연결되어 있는 사용자 계정을 페이지 하단에 보여주도록 하였다.
+
+1. **web3 세팅**: web3.js는 클라이언트 앱에서 블록체인과 연결되기 위한 javascript 라이브러리다. 우리는 "initWeb3"라는 함수로 web3를 설정해줬다.
+2. **contracts 초기화**: "initContract"라는 함수 내부에서 배포된 스마트 계약 인스턴스를 가져온다. 그리고 contracts와 소통할 수 있도록 만들어줄 몇몇 변수를 할당한다.
+3. **Render 함수**: render 함수는 페이지에 스마트 계약에서 가져온 데이터들을 보여줄 수 있는 역할을 해준다. 여기서 우리는 스마트 계약에서 생성한 후보자들을 테이블에 렌더링 해주었다. 또한, 현재 블록체인에 연결되어 있는 사용자 계정을 페이지 하단에 보여주도록 하였다.
 
 이제 클라이언트 앱을 브라우저에서 확인해보도록 하자. 그전에 우리의 contracts가 migration이 잘되어있도록 다시 한번 확인해보자
 
@@ -429,11 +431,35 @@ $(function() {
 
 <img width="361" alt="2019-02-22 12 19 43" src="https://user-images.githubusercontent.com/14902468/53179704-96a4e180-3637-11e9-9345-512980cc40a8.png">
 
-새로 설정한 URL로 Metamask를 변경해주면
+새로 설정한 URL로 Metamask를 변경해준다.
+
+해당 프라이빗 네트워크로 접속 시도를 하면 아래와 같은 로그인 화면이 뜰 것이다. 이 비밀번호는 최초 메타마스크 가입시 설정했던 비밀번호이다.
+
+<img width="361" alt="2019-02-22 11 27 49" src="https://user-images.githubusercontent.com/14902468/53248640-848b7780-36f9-11e9-964a-c33f912ab146.png">
+
+로그인을 하면 화면이 아래와 같이 정상적으로 뜨게된다!
 
 <img width="697" alt="2019-02-22 12 21 53" src="https://user-images.githubusercontent.com/14902468/53179874-e8e60280-3637-11e9-8d87-e92237bd4a1b.png">
 
-이렇게 화면이 정상적으로 뜨게된다!
+
+
+로그인 후 가나슈에 있는 10개의 계정 중 원하는 계정을 추가하고 싶다면 우측 상단의 동그라미를 클릭한다.
+
+<img width="361" alt="2019-02-22 11 35 44" src="https://user-images.githubusercontent.com/14902468/53249124-bb15c200-36fa-11e9-84e7-7c0c43bd9208.png">
+
+"계정 가져오기"를 누르면 아래와 같은 화면이 나타나는데
+
+<img width="361" alt="2019-02-22 11 37 45" src="https://user-images.githubusercontent.com/14902468/53249190-e26c8f00-36fa-11e9-8875-4373fdb98545.png">
+
+여기서 개인키는 가나슈에 있는 10개의 계정중 추가 원하는 계정의 개인키를 입력해주면 된다.
+
+<img width="1190" alt="2019-02-22 11 29 24" src="https://user-images.githubusercontent.com/14902468/53248750-ce745d80-36f9-11e9-81a0-a1be4e2f6c65.png">
+
+<img width="1192" alt="2019-02-22 11 31 21" src="https://user-images.githubusercontent.com/14902468/53248915-214e1500-36fa-11e9-9189-abad1408292b.png">
+
+추가한 계정으로 전환하면 이렇게 이더를 가지고 있는 가나슈 계정으로 로그인된다.
+
+<img width="361" alt="2019-02-22 11 39 53" src="https://user-images.githubusercontent.com/14902468/53249337-2f506580-36fb-11e9-8b70-9aa3b7444390.png">
 
 ### 참고
 

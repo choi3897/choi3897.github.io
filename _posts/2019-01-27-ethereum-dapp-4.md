@@ -1,5 +1,5 @@
 ---
-title: "Ethereum(이더리움) 투표 Dapp Tutorial(번역 및 개발)- #4.Smoke Test - Step 1(개발 시작)"
+title: "Ethereum(이더리움) 투표 Dapp 개발 Tutorial - #4.Smoke Test"
 date: 2019-01-27 23:00:00 -0900
 categories: ethereum
 tags: 
@@ -14,13 +14,13 @@ lastmod: 2019-01-27 23:00:00 -0900
 
 # 목록
 
-1. [Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #1.Blockchain이란](https://choi3897.github.io/ethereum/ethereum-dapp-1/#)
-2. [Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #2.Smart Contract란](https://choi3897.github.io/ethereum/ethereum-dapp-2/#)
-3. [Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #3.개발환경 설정](https://choi3897.github.io/ethereum/ethereum-dapp-3/#)
-4. **Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #4.Smoke Test - Step 1(개발 시작)**
-5. Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #5.List Candidates - Step 2
-6. Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #6. Cast Votes - Step 3
-7. Ethereum(이더리움) 투표 Dapp Tutorial 개발 - #7. Watch Events - Step 4(개발 완료)
+1. [Ethereum(이더리움) 투표 Dapp 개발 Tutorial - #1.Blockchain이란](https://choi3897.github.io/ethereum/ethereum-dapp-1/#)
+2. [Ethereum(이더리움) 투표 Dapp 개발 Tutorial - #2.Smart Contract란](https://choi3897.github.io/ethereum/ethereum-dapp-2/#)
+3. [Ethereum(이더리움) 투표 Dapp 개발 Tutorial - #3.개발환경 설정](https://choi3897.github.io/ethereum/ethereum-dapp-3/#)
+4. [**Ethereum(이더리움) 투표 Dapp 개발 Tutorial - #4.Smoke Test**](https://choi3897.github.io/ethereum/ethereum-dapp-4/#)
+5. [Ethereum(이더리움) 투표 Dapp 개발 Tutorial - #5.List Candidates](https://choi3897.github.io/ethereum/ethereum-dapp-5/#)
+6. [Ethereum(이더리움) 투표 Dapp 개발 Tutorial - #6. Cast Votes](https://choi3897.github.io/ethereum/ethereum-dapp-6/#)
+7. [Ethereum(이더리움) 투표 Dapp 개발 Tutorial - #7. Watch Events](https://choi3897.github.io/ethereum/ethereum-dapp-7/#)
 
 # Smoke Test까지 개발하기
 
