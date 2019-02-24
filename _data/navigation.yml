@@ -16,10 +16,10 @@ posts:
     children:
       - title: "Ethereum"
         url: /categories/#ethereum
-      - title: "Hyperledger Fabric"
-        url: /categories/#hyperledger-fabric/
   - title: "Protocol"
-    url: "/categories/#protocol/"
+    url: /categories/#protocol
   - title: "Post"
-    url: /categories/#post/
+    url: /categories/#post
+  - title: "Etc"
+    url: /categories/#etc
 
