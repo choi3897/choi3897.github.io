@@ -16,6 +16,10 @@ posts:
     children:
       - title: "Ethereum"
         url: /categories/#ethereum
+  - title: "Docker"
+    url: /categories/#docker
+  - title: "Kubernetes(K8S)"
+    url: /categories/#kubernetes
   - title: "Protocol"
     url: /categories/#protocol
   - title: "Post"
