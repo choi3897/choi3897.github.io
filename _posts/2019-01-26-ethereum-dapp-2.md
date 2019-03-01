@@ -3,10 +3,10 @@ title: "Ethereum(이더리움) 투표 Dapp 개발 Tutorial - #2. Smart Contract�
 date: 2019-01-26 19:00:00 -0900
 categories: ethereum
 tags: 
-  - Blockchain
-  - Ethereum
-  - Dapp
-  - Solidity
+  - blockchain
+  - ethereum
+  - dapp
+  - solidity
 lastmod: 2019-01-26 19:00:00 -0900
 ---
 
